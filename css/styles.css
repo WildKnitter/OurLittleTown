@@ -1,0 +1,135 @@
+/* This is an additional stylesheet for the Podunk Junction site*/
+
+/* Stylesheet code from the Bootstrap Jumbotron template */
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/* Color and bottom padding change for the Jumbotron section */
+
+.jumbotron {
+  padding: 2rem 1rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #4cacbb;
+  border-radius: 0.3rem;
+}
+
+/* Formatting for the Header */
+
+header {
+  text-align: center;
+  font-weight: bold;
+}
+
+body {
+  background-color: white;
+  height: 100%;
+  background-image: linear-gradient(-90deg, rgb(41, 102, 214), yellow);
+}
+
+/* Formatting for hotel room grid */
+
+
+/* Formatting for the Footer */
+
+footer {
+  clear: left;
+  border-top: thin solid navy;
+  text-align: right;
+}
+
+/* Fix links so that they are underlined when one hovers over them */
+
+.nav-link:hover,
+.nav-link:focus {
+  text-decoration: underline;
+}
+
+.btn-margin {
+  margin: auto;
+  display: inline;
+}
+
+#errorMsg {
+  color: red;
+  font-weight: bold;
+
+}
+
+
+/* Extra-Small devices (landscape phones, 576px and down) */
+
+@media (max-width: 576px) {
+  #imgmountain {
+    background-image: url("../images/glacier-blue-kayakGBK_AM_Col__Dada._PC_Melanee_Stiassny_medium.jpg");
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+  #imgmountain {
+    background-image: url("../images/glacier-blue-kayakGBK_AM_Col__Dada._PC_Melanee_Stiassny_medium.jpg");
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+  #imgmountain {
+    background-image: url("../images/glacier-blue-kayakGBK_AM_Col__Dada._PC_Melanee_Stiassny_medium.jpg");
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+  #imgmountain {
+    background-image: url("../images/glacier-blue-kayakGBK_AM_Col__Dada._PC_Melanee_Stiassny_large.jpg");
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+  #imgmountain {
+    background-image: url("../images/glacier-blue-kayakGBK_AM_Col__Dada._PC_Melanee_Stiassny_large.jpg");
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
