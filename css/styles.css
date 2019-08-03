@@ -68,12 +68,45 @@ footer {
 
 }
 
+.imgRef {
+  text-align: center;
+  font-weight: normal;
+  font-size: 12px;
+}
+
 
 /* Extra-Small devices (landscape phones, 576px and down) */
 
 @media (max-width: 576px) {
   #imgmountain {
     background-image: url("../images/glacier-blue-kayakGBK_AM_Col__Dada._PC_Melanee_Stiassny_medium.jpg");
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #imghotel {
+    background-image: url("../images/hotel_medium.jpg");
+    width: 300px;
+    height: 220px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #imgkiasoul {
+    background-image: url("../images/kia_medium.jpg");
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #imgkiasorrento {
+    background-image: url("../images/kia_sorento_medium.jpg");
     width: 200px;
     height: 200px;
     background-repeat: no-repeat;
@@ -93,6 +126,33 @@ footer {
     margin-right: auto;
     margin-left: auto;
   }
+
+  #imghotel {
+    background-image: url("../images/hotel_medium.jpg");
+    width: 300px;
+    height: 220px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #imgkiasoul {
+    background-image: url("../images/kia_medium.jpg");
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #imgkiasorrento {
+    background-image: url("../images/kia_sorento_medium.jpg");
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -106,6 +166,34 @@ footer {
     margin-right: auto;
     margin-left: auto;
   }
+
+  #imghotel {
+    background-image: url("../images/hotel_medium.jpg");
+    width: 300px;
+    height: 220px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #imgkiasoul {
+    background-image: url("../images/kia_medium.jpg");
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #imgkiasorrento {
+    background-image: url("../images/kia_sorento_medium.jpg");
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -119,6 +207,33 @@ footer {
     margin-right: auto;
     margin-left: auto;
   }
+
+  #imghotel {
+    background-image: url("../images/hotel_medium.jpg");
+    width: 350px;
+    height: 257px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #imgkiasoul {
+    background-image: url("../images/kia_large.jpg");
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #imgkiasorrento {
+    background-image: url("../images/kia_sorento_large.jpg");
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -126,6 +241,33 @@ footer {
 @media (min-width: 1200px) {
   #imgmountain {
     background-image: url("../images/glacier-blue-kayakGBK_AM_Col__Dada._PC_Melanee_Stiassny_large.jpg");
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #imghotel {
+    background-image: url("../images/hotel_large.jpg");
+    width: 450px;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #imgkiasoul {
+    background-image: url("../images/kia_large.jpg");
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #imgkiasorrento {
+    background-image: url("../images/kia_sorento_large.jpg");
     width: 300px;
     height: 300px;
     background-repeat: no-repeat;
