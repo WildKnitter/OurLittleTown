@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Page to provide a car rental form that totals up the amount cost of the rental.-->
+<!--Page to provide a hotel form that totals up the amount cost of the stay.-->
 
 <head>
     <title>Podunk Junction</title>
-    <!--JavaScript sheet-->
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,9 +32,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="carrental.html">Our Car Rental</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="tours.html">Tours</a>
-                </li>
             </ul>
         </div>
     </nav>
@@ -50,8 +46,7 @@
                 <div class="col-md-8 offset-md-2">
                     <p>Podunk Junction Inn is a lovely, cozy hotel, committed to serving your every possible need!</p>
                     <p>Choose between a Queen, King, King Suite, and 2-Bedroom Suite.
-                        <p>For a modest fee, your stay can also include breakfast--our Aunt Ethel cooks up a mean
-                            waffle!</p>
+                        <p>For a modest fee, your stay can also include breakfast - our Aunt Ethel cooks up a mean waffle - Seniors eat for free!</p>
                         <p>In addition, we honor AAA, Senior, and Military discounts. </p>
                 </div>
             </div>
@@ -60,77 +55,77 @@
     </div>
     <main>
         <div class="container">
-            <!-- Example row of columns -->
-            <div class="col-lg-10">
-                <form id="carRental" method="get" action="#">
+            <div class="row">
+                <div class="col-lg-7">
+                    <form id="hotelRental" method="get" action="#">
 
-                    <label for="checkInDate">Check-in Date: </label>
-                    <input type="date" id="checkInDate" name="checkInDate" required>
-                    <br /><br />
-                    <label for="numNights">Number of nights for your stay: </label>
-                    <input type="text" id="numNights" name="numNights" required>
-                    <br /><br />
-                    <label for="numKids">Number of Adults: </label>
-                    <input type="text" id="numAdults" name="numAdults" required>
-                    <br /><br />
-                    <label for="numKids">Number of Children: </label>
-                    <input type="text" id="numKids" name="numKids">
-                    <br /><br />
+                        <label for="checkInDate">Check-in Date: </label>
+                        <input type="date" id="checkInDate" name="checkInDate" required>
+                        <br /><br />
+                        <label for="numNights">Number of nights for your stay: </label>
+                        <input type="text" id="numNights" name="numNights" required>
+                        <br /><br />
+                        <label for="numKids">Number of Adults: </label>
+                        <input type="text" id="numAdults" name="numAdults" required>
+                        <br /><br />
+                        <label for="numKids">Number of Children: </label>
+                        <input type="text" id="numKids" name="numKids">
+                        <br /><br />
 
-                    <label for="roomType"><strong>Room Type: </strong></label>
-                    <select id="roomType" name="roomType">
-                        <option value="titleDefault">Room Type * Max Occupancy * Seasonal Rates *
-                            Off-Season Rates</option>
-                        <option value="queen">Queen * Occ 5 (inc rollaway) * $250 * $150 off-season</option>
-                        <option value="king">King * Occ 2 * $250 * $150 off-season</option>
-                        <option value="kingSuite">King Suite * Occ 4 (inc sleeper sofa) * $310 * $190 off-season
-                        </option>
-                        <option value="twoBedroomSuite">2-Bedroom Suite * Occ 6 (inc sleeper sofa) * $350 * $210
-                            off-season</option>
-                    </select>
+                        <label for="roomType"><strong>Room Type: </strong></label>
+                        <select id="roomType" name="roomType">
+                            <option value="titleDefault">Room Type * Max Occupancy * Seasonal Rates *
+                                Off-Season Rates</option>
+                            <option value="queen">Queen * Occ 5 (inc rollaway) * $250 * $150 off-season</option>
+                            <option value="king">King * Occ 2 * $250 * $150 off-season</option>
+                            <option value="kingSuite">King Suite * Occ 4 (inc sleeper sofa) * $310 * $190 off-season
+                            </option>
+                            <option value="twoBedroomSuite">2-Bedroom Suite * Occ 6 (inc sleeper sofa) * $350 * $210
+                                off-season</option>
+                        </select>
 
-                    <p><strong>Breakfast?</strong></p>
-                    <input type="checkbox" id="breakfastOption" name="breakfastOption" value="breakfastOption">
-                    <label for="breakfastOption">Check here if you want the best breakfast ever!</label>
-                    <br />
-                    <p><strong>Standard Discounts</strong></p>
-                    <input type="radio" name="discountType" id="aaa" value="aaa"> AAA
-                    <input type="radio" name="discountType" id="senior" value="senior"> Senior
-                    <input type="radio" name="discountType" id="military" value="military"> Military
-                    <input type="radio" name="discountType" id="noneOfTheAbove" value="noneOfTheAbove" checked> None
-                    <br /><br />
+                        <p><strong>Breakfast?</strong></p>
+                        <input type="checkbox" id="breakfastOption" name="breakfastOption" value="breakfastOption">
+                        <label for="breakfastOption">Check here if you want the best breakfast ever!</label>
+                        <br />
+                        <p><strong>Standard Discounts</strong></p>
+                        <input type="radio" name="discountType" id="aaa" value="aaa"> AAA
+                        <input type="radio" name="discountType" id="senior" value="senior"> Senior
+                        <input type="radio" name="discountType" id="military" value="military"> Military
+                        <input type="radio" name="discountType" id="noneOfTheAbove" value="noneOfTheAbove" checked> None
+                        <br /><br />
 
-                    <input type="button" id="btnPrice" name="btnPrice" value="Estimate Total Cost">
-                    <input type="reset" id="resetBtn" name="resetBtn">
+                        <input type="button" id="btnPrice" name="btnPrice" value="Estimate Total Cost">
+                        <input type="reset" id="resetBtn" name="resetBtn">
 
-                    <br /><br />
-                    <!--Answer for Total Price-->
-                    <p><strong>TOTALS</strong></p>
-                    <label for="checkInDateShow">Check-in Date: </label>
-                    <input type="text" id="checkInDateShow" name="checkInDateShow" disabled>
-                    <label for="checkOutDate">Check-Out Date: </label>
-                    <input type="text" id="checkOutDate" name="checkOutDate" disabled>
-                    <br /><br />
-                    <label for="totalRoomBreakSubtotal">Total Room Cost: </label>
-                    <input type="text" id="totalRoomBreakSubtotal" name="totalRoomBreakSubtotal" disabled>
-                    <br />
-                    <label for="discountTotal">Discount: </label>
-                    <input type="text" id="discountTotal" name="discountTotal" disabled>
-                    <br />
-                    <label for="tax">Tax: </label>
-                    <input type="text" id="tax" name="tax" disabled>
-                    <br />
-                    <label for="totalPrice">Total due: </label>
-                    <input type="number" id="totalPrice" name="totalPrice" disabled>
-                    <br /><br />
+                        <br /><br />
+                        <!--Answer for Total Price-->
+                        <p><strong>TOTALS</strong></p>
+                        <label for="checkInDateShow">Check-in Date: </label>
+                        <input type="text" id="checkInDateShow" name="checkInDateShow" disabled>
+                        <label for="checkOutDate">Check-Out Date: </label>
+                        <input type="text" id="checkOutDate" name="checkOutDate" disabled>
+                        <br /><br />
+                        <label for="totalRoomBreakSubtotal">Total Room Cost: </label>
+                        <input type="text" id="totalRoomBreakSubtotal" name="totalRoomBreakSubtotal" disabled>
+                        <br />
+                        <label for="discountTotal">Discount: </label>
+                        <input type="text" id="discountTotal" name="discountTotal" disabled>
+                        <br />
+                        <label for="tax">Tax: </label>
+                        <input type="text" id="tax" name="tax" disabled>
+                        <br />
+                        <label for="totalPrice">Total due: </label>
+                        <input type="number" id="totalPrice" name="totalPrice" disabled>
+                        <br /><br />
 
-                </form>
+                    </form>
+                </div>
+                <div class="col-lg-5">
+                    <div id="imghotel"></div>
+                    <p class="imgRef">photo credit: Wikipedia</p>
+                </div>
             </div>
-
-
-
-
-
 
         </div> <!-- /container -->
 
