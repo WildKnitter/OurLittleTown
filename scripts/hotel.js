@@ -15,13 +15,16 @@
 
 function init() {
     const btnPrice = document.getElementById("btnPrice");
+    const resetBtn1 = document.getElementById("resetBtn");
     btnPrice.onclick = finalTotalCost;
+    resetBtn1.onclick = resetBtn;
 }
 
 // can put document.getElementById in the finalTotalCost
 
 function resetBtn() {
-    document.getElementById("resetBtn").reset();
+    document.getElementById("errorMsg").style.display = "none";
+    document.getElementById("resetBtn").reset();    
 }
 
 // This function breaks out your room choice and returns that line with roomType, 
@@ -48,8 +51,6 @@ function getRoomInfo(roomType) {
 // form, with roomInfo, numAdults, and numKids
 function canRoomHoldCustomer(roomInfo, numAdults, numKids) {
     let canRoomHoldCustomerAnswer;
-    //    let numAdults;
-    //    let numKids;
     let numPeopleTotal = (numAdults + numKids);
     if (numPeopleTotal > roomInfo.maxOccupancy) {
         alert("You have too many people for this room choice - Select another option.");
@@ -125,6 +126,24 @@ function finalTotalCost() {
     let numAdults = Number(document.getElementById("numAdults").value);
     let numKids = Number(document.getElementById("numKids").value);
 
+    // Validations:
+
+    if ((numNights < 0) || (numAdults < 0) || (numKids < 0))
+    {
+        const errorMsg = document.getElementById("errorMsg");
+        errorMsg.innerHTML = "One or more of your inputs is a negative number!";
+        document.getElementById("totals").style.display = "none";
+        return;
+    }
+    else {
+        const errorMsg = document.getElementById("errorMsg");
+        errorMsg.innerHTML = " ";
+        document.getElementById("totals").style.display = "block";
+    }
+  
+    // Validations end
+
+    // Determine Discount Type to be used in functions above.
     let discountType;
     if (document.getElementById("aaa").checked) {
         discountType = "aaa";
@@ -152,7 +171,7 @@ function finalTotalCost() {
     //convert the milliseconds to a regular date
     checkOutDate = new Date(checkOutDate);
     checkOutDate = checkOutDate.toDateString();
-
+    checkInDate = checkInDate.toDateString();
 
     const roomTypeField = document.getElementById("roomType");
     let roomType = roomTypeField.options[roomTypeField.selectedIndex].value;
