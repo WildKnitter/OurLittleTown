@@ -6,10 +6,13 @@
 
 function init() {
     const btnPrice = document.getElementById("btnPrice");
+    const resetBtn1 = document.getElementById("resetBtn");
     btnPrice.onclick = carRentalTotal;
+    resetBtn1.onclick = resetBtn;
 }
 
 function resetBtn() {
+    document.getElementById("errorMsg").style.display = "none";
     document.getElementById("resetBtn").reset();
 }
 
@@ -20,14 +23,29 @@ function carRentalTotal() {
     let roadsideAssist = document.getElementById("roadsideAssist").checked;
     let pickupDate = document.getElementById("pickupDate").value;
 
-    let electronicTollTagTotal = 0;
-    let gpsTotal = 0;
-    let roadsideAssistTotal = 0;
-    let carRentalSubtotal = 0;
-    let carRentalOptionsTotal = 0;
-    let under25SurChargeTotal = 0;
-    let totalPrice = 0;
+    let electronicTollTagTotal;
+    let gpsTotal;
+    let roadsideAssistTotal;
+    let carRentalSubtotal;
+    let carRentalOptionsTotal;
+    let under25SurChargeTotal;
+    let totalPrice;
     let returnDate;
+
+    // Validation:
+    
+    if (numberOfDays < 0)
+    {
+        const errorMsg = document.getElementById("errorMsg");
+        errorMsg.innerHTML = "One or more of your inputs is a negative number!";
+        document.getElementById("totals").style.display = "none";
+        return;
+    }
+    else {
+        const errorMsg = document.getElementById("errorMsg");
+        errorMsg.innerHTML = " ";
+        document.getElementById("totals").style.display = "block";
+    }
 
     //Determine the return date
     pickupDate = new Date(pickupDate);

@@ -61,7 +61,7 @@
                     <input type="date" id="pickupDate" name="pickupDate">
                     <br /><br />
                     <label for="numberOfDays">Number of days: </label>
-                    <input type="text" id="numberOfDays" name="numberOfDays" required>
+                    <input type="number" id="numberOfDays" name="numberOfDays" required>
                     <br /><br />
                     <label for="carType"><strong>Car Type: </strong></label>
                     <select id="carType" name="carType">
@@ -90,21 +90,24 @@
 
                     <br /><br />
                     <!--Answer for Total Price-->
-                    <label for="carRentalSubtotal">Car rental: </label>
-                    <input type="text" id="carRentalSubtotal" name="carRentalSubtotal" disabled>
-                    <br />
-                    <label for="carRentalOptionsTotal">Options: </label>
-                    <input type="text" id="carRentalOptionsTotal" name="carRentalOptionsTotal" disabled>
-                    <br />
-                    <label for="under25SurChargeTotal">Under 25 Surcharge: </label>
-                    <input type="text" id="under25SurChargeTotal" name="under25SurChargeTotal" disabled>
-                    <br />
-                    <label for="totalPrice">Total due: </label>
-                    <input type="number" id="totalPrice" name="totalPrice" disabled>
-                    <br /><br />
-                    <!--Return Date-->
-                    <label for="returnDate">Return date: </label>
-                    <input type="text" id="returnDate" name="returnDate" disabled>
+                    <div id="totals">
+                        <label for="carRentalSubtotal">Car rental: </label>
+                        <input type="text" id="carRentalSubtotal" name="carRentalSubtotal" disabled>
+                        <br />
+                        <label for="carRentalOptionsTotal">Options: </label>
+                        <input type="text" id="carRentalOptionsTotal" name="carRentalOptionsTotal" disabled>
+                        <br />
+                        <label for="under25SurChargeTotal">Under 25 Surcharge: </label>
+                        <input type="text" id="under25SurChargeTotal" name="under25SurChargeTotal" disabled>
+                        <br />
+                        <label for="totalPrice">Total due: </label>
+                        <input type="number" id="totalPrice" name="totalPrice" disabled>
+                        <br /><br />
+                        <!--Return Date-->
+                        <label for="returnDate">Return date: </label>
+                        <input type="text" id="returnDate" name="returnDate" disabled>
+                    </div>
+                    <p id="errorMsg"></p>
                     <br /><br />
                 </form>
 
