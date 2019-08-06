@@ -4,7 +4,7 @@
 
 //DETERMINE THE CAR RENTAL TOTALS
 
-function init() {
+window.onload = function () {
     const btnPrice = document.getElementById("btnPrice");
     const resetBtn1 = document.getElementById("resetBtn");
     btnPrice.onclick = carRentalTotal;
@@ -13,11 +13,11 @@ function init() {
 
 function resetBtn() {
     document.getElementById("errorMsg").style.display = "none";
-    document.getElementById("resetBtn").reset();
+    location.reload(true);
 }
 
 function carRentalTotal() {
-    let numberOfDays = document.getElementById("numberOfDays").value;
+    let numberOfDays = Number(document.getElementById("numberOfDays").value);
     let electronicTollTag = document.getElementById("electronicTollTag").checked;
     let gps = document.getElementById("gps").checked;
     let roadsideAssist = document.getElementById("roadsideAssist").checked;
@@ -32,12 +32,10 @@ function carRentalTotal() {
     let totalPrice;
     let returnDate;
 
-    // Validation:
-    
-    if (numberOfDays < 0)
-    {
+    // Validation:    
+    if (numberOfDays <= 0) {
         const errorMsg = document.getElementById("errorMsg");
-        errorMsg.innerHTML = "One or more of your inputs is a negative number!";
+        errorMsg.innerHTML = "One or more of your inputs is a negative number or blank!";
         document.getElementById("totals").style.display = "none";
         return;
     }
@@ -117,7 +115,7 @@ function carRentalTotal() {
     document.getElementById("totalPrice").value = totalPrice.toFixed(2);
 }
 
-window.onload = init;
+
 
 
 
